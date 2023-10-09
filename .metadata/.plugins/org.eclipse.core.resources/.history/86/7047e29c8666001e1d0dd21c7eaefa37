@@ -1,0 +1,16 @@
+package com.spring.start.utilities;
+
+public class CalcularHora {
+	
+	public static String calcular(byte hora,byte minuto,byte segundo) {
+		
+		if (segundo==59) {
+			segundo = 0;
+			minuto++;
+		}
+		if (minuto==59) {
+			minuto=0;
+			hora++;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+package com.spring.start.utilities;
+
+import java.util.Map;
+
+public class Calcular {
+	
+	public static String calculadora(Map<String,String> numeros) {
+		
+		int num1 = Integer.parseInt(numeros.get("num1"));
+		int num2 = Integer.parseInt(numeros.get("num2"));
+		
+		String devolver;
+		devolver += "Suma: "+(num1+num2+"\n";
+		devolver += "Resta: "+(numeros.get("num1")-numeros.get("num2"))+"\n";
+		devolver += "Multiplicacion: "+(numeros.get("num1")*numeros.get("num2"))+"\n";
+		devolver += "Division: "+(numeros.get("num1")/numeros.get("num2"));
+	}
+}
